@@ -24,9 +24,13 @@ module.exports = function(robot) {
 };
 
 function imageMe(msg, query, animated, cb) {
-  var q = {
-    q: query
-  };
+  var q;
+  if (animated) {
+    q = {q: query};
+  }
+  else {
+    q = {q_all: query, q_type: 'anigif'};
+  }
 
   msg.http('https://api.imgur.com/3/gallery/search')
     .query(q)

@@ -1,6 +1,4 @@
-# brobbot-google-image (deprecated)
-
-## Google has apparently shut down the image search API.
+# brobbot-imgur-image
 
 A brobbot plugin for image searches.
 
@@ -8,20 +6,21 @@ A brobbot plugin for image searches.
 brobbot image [me] <query>
 ```
 
-Googles `query` and returns 1st result's URL.
+Searches Imgur for `query` and returns 1st result's URL.
 
 ```
 brobbot animate [me] <query>
 ```
 
-Googles `query` and tries to return the first animated GIF result.
+Searches Imgur for `query` and tries to return the first animated GIF result.
 
 ## Configuration
 
-### Referer
+### Client ID
 
 ```bash
-BROBBOT_GOOGLE_IMAGE_REFERER=url
+BROBBOT_IMGUR_IMAGE_CLIENT_ID=ID
 ```
 
-Set the referer URL sent to the Google API (see https://developers.google.com/image-search/v1/jsondevguide).
+Set the client ID used to connect to the Imgur API.
+See https://api.imgur.com
