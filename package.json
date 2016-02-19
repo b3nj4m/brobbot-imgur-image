@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/b3nj4m/brobbot-imgur-image/issues"
   },
-  "homepage": "https://github.com/b3nj4m/brobbot-imgur-image#readme"
+  "homepage": "https://github.com/b3nj4m/brobbot-imgur-image#readme",
+  "peerDependencies": {
+    "brobbot": "4.x - 6.x"
+  }
 }
